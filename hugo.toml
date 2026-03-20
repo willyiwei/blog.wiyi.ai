@@ -25,7 +25,7 @@ buildFuture = false
 
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/willyiwei"
+    url = "https://linkedin.com/in/willyi"
 
   [[params.socialIcons]]
     name = "github"
@@ -44,7 +44,7 @@ buildFuture = false
       description = "Engineering leadership, agentic AI, and systems thinking."
       [languages.en.params.homeInfoParams]
         Title = "Will Yi"
-        Content = "Engineering manager at Cisco. I write about agentic AI, engineering leadership, and how to build systems that actually work in production."
+        Content = "Engineering manager at Cisco. I write about agentic AI, engineering leadership, investing, and running."
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "posts"
@@ -70,7 +70,7 @@ buildFuture = false
       description = "工程领导力、AI 智能体与系统思维。"
       [languages.zh.params.homeInfoParams]
         Title = "Will Yi"
-        Content = "Cisco 工程经理。我写关于 AI 智能体、工程管理，以及如何构建真正在生产环境中运行的系统。"
+        Content = "Cisco 软件开发经理。我写关于 AI 智能体、工程管理、投资财富和健康跑步。"
     [languages.zh.menu]
       [[languages.zh.menu.main]]
         identifier = "posts"
