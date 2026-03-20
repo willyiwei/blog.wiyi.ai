@@ -1,0 +1,101 @@
+baseURL = "https://blog.wiyi.ai"
+defaultContentLanguage = "en"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "Will Yi"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = false
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/willyiwei"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/willyiwei"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    title = "Will Yi"
+    [languages.en.params]
+      description = "Engineering leadership, agentic AI, and systems thinking."
+      [languages.en.params.homeInfoParams]
+        Title = "Will Yi"
+        Content = "Engineering manager at Cisco. I write about agentic AI, engineering leadership, and how to build systems that actually work in production."
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 3
+
+  [languages.zh]
+    languageName = "中文"
+    weight = 2
+    title = "Will Yi"
+    [languages.zh.params]
+      description = "工程领导力、AI 智能体与系统思维。"
+      [languages.zh.params.homeInfoParams]
+        Title = "Will Yi"
+        Content = "Cisco 工程经理。我写关于 AI 智能体、工程管理，以及如何构建真正在生产环境中运行的系统。"
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = "posts"
+        name = "文章"
+        url = "/zh/posts/"
+        weight = 1
+      [[languages.zh.menu.main]]
+        identifier = "tags"
+        name = "标签"
+        url = "/zh/tags/"
+        weight = 2
+      [[languages.zh.menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/zh/about/"
+        weight = 3
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "github-dark"
